@@ -1,37 +1,33 @@
 import Link from 'next/link';
+import { MouseEventHandler } from 'react';
 
-interface ILinks {
-  id: number;
-  label: string;
-  href: string;
+interface IMenuProps {
+  click?: MouseEventHandler;
 }
 
-const links: ILinks[] = [
-  { id: 1, label: 'About the shelter', href: '/about' },
-  { id: 2, label: 'Our pets', href: '/pets' },
-  { id: 3, label: 'Help the shelter', href: '/help' },
-  { id: 4, label: 'Contacts', href: '/contacts' },
-];
-
-const Menu = () => {
+const Menu = ({ click }: IMenuProps) => {
   return (
     <ul className='hidden items-center justify-center gap-x-8.75 md:flex'>
-      {links.map(({ id, label, href }) => (
-        <li className='relative' key={id}>
-          <Link
-            href={href}
-            className='
-            text-[15px] 
-            leading-relaxed
-            text-[#cdcdcd] 
-            hover:text-[#fafafa]
-            links-on-hover
-            '
-          >
-            {label}
-          </Link>
-        </li>
-      ))}
+      <li className='relative'>
+        <Link href='/#section-about' className='links links-on-hover' onClick={click}>
+          About the shelter
+        </Link>
+      </li>
+      <li className='relative'>
+        <Link href='/pets' className='links links-on-hover'>
+          Our pets
+        </Link>
+      </li>
+      <li className='relative'>
+        <Link href='/help' className='links links-on-hover'>
+          Help the shelter
+        </Link>
+      </li>
+      <li className='relative'>
+        <Link href='/contacts' className='links links-on-hover'>
+          Contacts
+        </Link>
+      </li>
     </ul>
   );
 };
