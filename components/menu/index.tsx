@@ -15,7 +15,7 @@ const links: ILinks[] = [
 
 const Menu = () => {
   return (
-    <ul className='flex items-center justify-center gap-x-8.75'>
+    <ul className='hidden items-center justify-center gap-x-8.75 md:flex'>
       {links.map(({ id, label, href }) => (
         <li className='relative' key={id}>
           <Link
