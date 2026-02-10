@@ -8,6 +8,16 @@
 /* ======================================== */
 /* This is for menu links */
 
+.links {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #cdcdcd;
+}
+
+.links:hover {
+  color: #fafafa;
+}
+
 .links-on-hover:hover::after {
   content: '';
   display: block;
