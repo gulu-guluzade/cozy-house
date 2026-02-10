@@ -5,7 +5,7 @@ interface IHeading {
 const Heading = ({ heading }: IHeading) => {
   return (
     <div>
-      <h3 className='text-[35px] leading-snug tracking-wide text-[#545454]'>{heading}</h3>
+      <h2 className='text-[35px] leading-snug tracking-wide text-[#545454]'>{heading}</h2>
     </div>
   );
 };
