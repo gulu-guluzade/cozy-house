@@ -1,1 +1,28 @@
 @import 'tailwindcss';
+
+/* ======================================== */
+/* This is for menu links */
+
+.links-on-hover:hover::after {
+  content: '';
+  display: block;
+  height: 3px;
+  position: absolute;
+  background-color: #f1cdb3;
+
+  /* Animation */
+  animation-name: line;
+  animation-duration: 0.4s;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+
+@keyframes line {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+/* ======================================== */
