@@ -4,10 +4,11 @@ interface IButtonLink {
   text: string;
   href: string;
   className?: string;
+  parentClassName?: string;
 }
-const ButtonLink = ({ text, href, className }: IButtonLink) => {
+const ButtonLink = ({ text, href, className, parentClassName }: IButtonLink) => {
   return (
-    <div>
+    <div className={`${parentClassName}`}>
       <Link
         href={href}
         className={`
