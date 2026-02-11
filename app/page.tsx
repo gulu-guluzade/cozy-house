@@ -1,4 +1,5 @@
 import About from '@/components/about';
+import Help from '@/components/help';
 import Hero from '@/components/hero';
 
 const Home = () => {
@@ -6,6 +7,7 @@ const Home = () => {
     <main>
       <Hero />
       <About />
+      <Help />
     </main>
   );
 };
