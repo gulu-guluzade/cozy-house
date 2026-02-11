@@ -22,7 +22,7 @@ const helpData: IHelpData[] = [
 
 const Help = () => {
   return (
-    <section className='pt-20 pb-25'>
+    <section className='pt-20 pb-25' id='section-help'>
       <Container>
         <div className='flex flex-col gap-y-15'>
           <Heading
