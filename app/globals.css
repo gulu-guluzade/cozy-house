@@ -1,5 +1,9 @@
 @import 'tailwindcss';
 
+@theme {
+  --breakpoint-xs: 480px;
+}
+
 .bg-gradient {
   background: #5b483a;
   background: linear-gradient(to right, rgba(91, 72, 58, 1) 0%, rgba(38, 36, 37, 1) 100%);
