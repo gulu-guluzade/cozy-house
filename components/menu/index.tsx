@@ -19,7 +19,7 @@ const Menu = ({ click }: IMenuProps) => {
         </Link>
       </li>
       <li className='relative'>
-        <Link href='/help' className='links links-on-hover'>
+        <Link href='/#section-help' className='links links-on-hover' onClick={click}>
           Help the shelter
         </Link>
       </li>
